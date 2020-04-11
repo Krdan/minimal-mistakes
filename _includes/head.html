@@ -13,6 +13,7 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="preload" href="{{ '/assets/fonts/Montez/Montez-Regular.woff2' | relative_url }}" as="font" crossorigin type="font/woff2">
 {% if jekyll.environment == 'production' and site.comments.provider and page.comments and site.comments.disqus.shortname and site.comments.disqus.ondemand %}
 <link rel="dns-prefetch" href="https://{{ site.comments.disqus.shortname }}.disqus.com">
 {% endif %}
