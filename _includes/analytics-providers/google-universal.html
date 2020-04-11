@@ -4,4 +4,4 @@
   ga('set', 'anonymizeIp', {{ site.analytics.google.anonymize_ip | default: false }});
   ga('send','pageview')
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
+<script src="{{ '/assets/js/google/analytics.js' | relative_url }}" async></script>
