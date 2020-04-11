@@ -140,6 +140,16 @@ a {
   }
 }
 
+#disqus_thread a {
+  color: $text-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: $link-color-hover;
+    outline: 0;
+  }
+}
+
 /* buttons */
 
 button:focus {
