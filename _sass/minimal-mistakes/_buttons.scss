@@ -95,3 +95,49 @@
     font-size: $type-size-7;
   }
 }
+
+/* Scroll to Top button */
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: mix(#000, $text-color, 10%);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  @include breakpoint($x-large) {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &:hover{
+      background: $text-color;
+
+      & svg{
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+#return-to-top svg {
+  color: $background-color;
+  position: relative;
+  margin-left: 13px;
+  margin-top: 15px;
+  font-size: 19px;
+  @include breakpoint($large) {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
