@@ -10,3 +10,15 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+sidebar:
+  - title: "Tassonomie"
+    children:
+      - title: "Categorie"
+        icon: "fas fa-folder-open"
+        url: /categories/
+      - title: "Tag"
+        icon: "fas fa-tag"
+        url: /tags/
+      - title: "Archivio"
+        icon: "fas fa-archive"
+        url: /year-archive/
