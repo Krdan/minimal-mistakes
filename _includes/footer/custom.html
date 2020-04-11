@@ -1,3 +1,27 @@
 <!-- start custom footer snippets -->
-
+<script src="{{ '/assets/js/cookieconsent-3.1.0/cookieconsent.min.js' | relative_url }}"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaeaea",
+      "text": "#000000"
+    },
+    "button": {
+      "background": "#00adb5",
+      "text": "#ffffff"
+    }
+  },
+  "theme": "edgeless",
+  "position": "top",
+  "static": true,
+  "content": {
+    "message": "Questo sito, come molti altri, necessita di alcuni cookie per funzionare correttamente, alcuni anche forniti da provider terzi per abilitare determinate funzioni.",
+    "dismiss": "Ho capito",
+    "link": "Leggi di più",
+    "href": "{{ '/privacy-policy/#cookie-policy' | relative_url }}"
+  }
+})});
+</script>
 <!-- end custom footer snippets -->
