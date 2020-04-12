@@ -274,3 +274,9 @@ defaults:
       comments: # true
       share: true
       related: true
+  # Default scope
+  - scope:
+      path: ""
+    values:
+      sidebar:
+        nav: sidebar
